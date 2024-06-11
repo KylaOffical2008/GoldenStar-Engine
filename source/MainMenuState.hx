@@ -35,8 +35,8 @@ typedef MainMenuCustom = {
 	xItem:Float,
 	yItem:Float,
 	textVersionEngine:String,
-	backGroundLoad:String = 'menuBG',
-	discordClientText:String = "in the menu",
+	backGroundLoad:String,
+	discordClientText:String,
 	optionsItem:Array<String>
 }
 
