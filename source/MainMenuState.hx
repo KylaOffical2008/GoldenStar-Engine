@@ -1,5 +1,13 @@
 package;
 
+/**
+* Well These MainMenu The Game Will Be Changed Ig if i can do something here
+* it's me ayedenia and ayed WE ARE TALKING HERE MFS
+* idk why these engine is still wanna work for it
+* version 1.0
+* @version nothing 4.0
+**/
+
 #if desktop
 import Discord.DiscordClient;
 #end
