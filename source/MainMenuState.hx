@@ -269,10 +269,10 @@ class MainMenuState extends MusicBeatState
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									case 'youtube':
-										FlxG.openURL('https://www.youtube.com/channel/UCkqJz1pbC4fCG1AVYJSAJpg, "_blank");
+										FlxG.openURL('https://www.youtube.com/channel/UCkqJz1pbC4fCG1AVYJSAJpg');
 										MusicBeatState.resetState();
 									case 'discord':
-										FlxG.openURL('https://discord.gg/KWsNRbU5Rx', "_blank");
+										FlxG.openURL('https://discord.gg/KWsNRbU5Rx');
 										MusicBeatState.resetState();
 										// idk what i should put you know										
 									case 'credits':
