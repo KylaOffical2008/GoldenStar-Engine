@@ -25,6 +25,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import lime.app.Application;
+import haxe.Json;
 import Achievements;
 import editors.MasterEditorMenu;
 import flixel.input.keyboard.FlxKey;
@@ -44,6 +45,7 @@ class MainMenuState extends MusicBeatState
 {
 	public static var versionEngine:String;
 	// public static var psychEngineVersion:String = '0.6.2'; //This is also used for Discord RPC // bye bye psych engine ToT
+	
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -71,9 +73,7 @@ class MainMenuState extends MusicBeatState
 	var debugKeys:Array<FlxKey>;
 
 	override function create()
-	{
-		menuCustom.optionShit = ['story_mode', 'freeplay', 'youtube', 'discord', 'credits', 'options'];
-		
+	{		
 		#if MODS_ALLOWED
 		Paths.pushGlobalMods();
 		#end
@@ -81,6 +81,7 @@ class MainMenuState extends MusicBeatState
 
 		menuCustom = Json.parse(Paths.getTextFromFile(pathsCustomMainMenu));
 
+		versionEngine = 'V4.0';
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence(menuCustom.discordClientText, null);
