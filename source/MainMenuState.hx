@@ -32,12 +32,12 @@ import flixel.input.keyboard.FlxKey;
 using StringTools;
 
 typedef MainMenuCustom = {
-	var xItem:Float,
-	var yItem:Float,
-	var textVersionEngine:String,
-	var backGroundLoad:String = 'menuBG',
-	var discordClientText:String = 'In the Menus',
-	var optionsItem:Array<String> = ['story_mode', 'freeplay', 'youtube', 'discord', 'credits', 'options']
+	xItem:Float,
+	yItem:Float,
+	textVersionEngine:String,
+	backGroundLoad:String = 'menuBG',
+	discordClientText:String = "in the menu",
+	optionsItem:Array<String>
 }
 
 class MainMenuState extends MusicBeatState
@@ -72,6 +72,8 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
+		menuCustom.optionShit = ['story_mode', 'freeplay', 'youtube', 'discord', 'credits', 'options'];
+		
 		#if MODS_ALLOWED
 		Paths.pushGlobalMods();
 		#end
