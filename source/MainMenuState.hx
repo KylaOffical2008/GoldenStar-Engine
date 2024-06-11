@@ -267,7 +267,7 @@ class MainMenuState extends MusicBeatState
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									case 'youtube':
-										FlxG.openURL('https://youtube.com/channel=/I5hsj5ba%21', "_blank");
+										FlxG.openURL('https://www.youtube.com/channel/UCkqJz1pbC4fCG1AVYJSAJpg', "_blank");
 										MusicBeatState.resetState();
 									case 'discord':
 										FlxG.openURL('https://discord.gg/KWsNRbU5Rx', "_blank");
