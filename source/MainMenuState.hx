@@ -32,12 +32,12 @@ import flixel.input.keyboard.FlxKey;
 using StringTools;
 
 typedef MainMenuCustom = {
-	var xItem:Float;
-	var yItem:Float;
-	var textVersionEngine:String;
-	var backGroundLoad:String = 'menuBG';
-	var discordClientText:String = 'In the Menus';
-	var optionsItem:Array<String> = ['story_mode', 'freeplay', 'youtube', 'discord', 'credits', 'options'];
+	var xItem:Float,
+	var yItem:Float,
+	var textVersionEngine:String,
+	var backGroundLoad:String = 'menuBG',
+	var discordClientText:String = 'In the Menus',
+	var optionsItem:Array<String> = ['story_mode', 'freeplay', 'youtube', 'discord', 'credits', 'options']
 }
 
 class MainMenuState extends MusicBeatState
@@ -267,7 +267,7 @@ class MainMenuState extends MusicBeatState
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									case 'youtube':
-										FlxG.openURL('https://www.youtube.com/channel/UCkqJz1pbC4fCG1AVYJSAJpg', "_blank");
+										FlxG.openURL('https://www.youtube.com/channel/UCkqJz1pbC4fCG1AVYJSAJpg, "_blank");
 										MusicBeatState.resetState();
 									case 'discord':
 										FlxG.openURL('https://discord.gg/KWsNRbU5Rx', "_blank");
