@@ -124,6 +124,11 @@ class MainMenuState extends MusicBeatState
 		magenta.antialiasing = ClientPrefs.globalAntialiasing;
 		magenta.color = 0xFFfd719b;
 		add(magenta);
+
+		blackImg = new FlxSprite(0, 0);
+		blackImg.makeGraphic(600, FlxG.height, FlxColor.BLACK);
+		blackImg.updateHitbox();
+		add(blackImg);
 		
 		// magenta.scrollFactor.set();
 
@@ -297,10 +302,13 @@ class MainMenuState extends MusicBeatState
 
 		super.update(elapsed);
 
+		/** BROTHER EEEHHHHH
 		menuItems.forEach(function(spr:FlxSprite)
 		{
 			spr.screenCenter(X);
 		});
+		**/
+
 	}
 
 	function changeItem(huh:Int = 0)
