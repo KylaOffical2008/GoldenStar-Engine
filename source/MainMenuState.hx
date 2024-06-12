@@ -50,6 +50,7 @@ class MainMenuState extends MusicBeatState
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
+	var blackImg:FlxSprite;
 	private var camAchievement:FlxCamera;
 
 	var optionShit:Array<String> = [
