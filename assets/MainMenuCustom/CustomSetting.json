@@ -4,5 +4,6 @@
     "backGroundLoad": "menuBG",
     "optionsItem": ["story_mode", "freeplay", "youtube", "discord", "credits", "options"],
     "discordClientText": "In Main Menu Engine",
-    "textVersionEngine": "GoldenStar Engine V4.0"
+    "textVersionEngine": "GoldenStar Engine V4.0",
+    "ogMainMenu": false
 }
