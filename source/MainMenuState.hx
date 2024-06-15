@@ -39,6 +39,7 @@ typedef MainMenuCustom = {
 	backGroundLoad:String,
 	discordClientText:String,
 	ogMainMenu:Bool,
+	blackImgVisible:Bool,
 	optionsItem:Array<String>
 }
 
@@ -129,7 +130,16 @@ class MainMenuState extends MusicBeatState
 
 		blackImg = new FlxSprite(0, 0);
 		blackImg.makeGraphic(600, FlxG.height, FlxColor.BLACK);
+		blackImg.x += 180;
+		blackImg.y -= 200;
 		blackImg.updateHitbox();
+		if(menuCustom.blackImgVisible == true){
+			add(blackImg);
+		}else{
+			remove(blackImg);
+			kill(blackImg);
+			destroy(blackImg);
+		}
 		add(blackImg);
 		
 		// magenta.scrollFactor.set();
