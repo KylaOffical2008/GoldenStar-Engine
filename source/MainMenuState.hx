@@ -38,6 +38,7 @@ typedef MainMenuCustom = {
 	textVersionEngine:String,
 	backGroundLoad:String,
 	discordClientText:String,
+	ogMainMenu:Bool,
 	optionsItem:Array<String>
 }
 
@@ -154,6 +155,11 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
+			if(menuCustom.ogMainMenu == true){
+				menuItem.screenCenter(X);
+			}else{
+				//nothing as fuck
+			}
 			// menuItem.screenCenter(X);
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
@@ -309,6 +315,12 @@ class MainMenuState extends MusicBeatState
 			spr.screenCenter(X);
 		});
 		**/
+		if(menuCustom.ogMainMenu == true){
+			menuItems.forEach(function(spr:FlxSprite)
+				{
+					spr.screenCenter(X);
+				});
+		}
 
 	}
 
