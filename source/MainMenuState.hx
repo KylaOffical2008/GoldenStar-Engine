@@ -137,8 +137,7 @@ class MainMenuState extends MusicBeatState
 			add(blackImg);
 		}else{
 			remove(blackImg);
-			kill(blackImg);
-			destroy(blackImg);
+			// nvm lol
 		}
 		add(blackImg);
 		
