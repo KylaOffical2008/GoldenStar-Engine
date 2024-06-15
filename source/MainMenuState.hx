@@ -139,7 +139,7 @@ class MainMenuState extends MusicBeatState
 			remove(blackImg);
 			// nvm lol
 		}
-		add(blackImg);
+		// add(blackImg);
 		
 		// magenta.scrollFactor.set();
 
